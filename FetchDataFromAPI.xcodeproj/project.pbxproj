@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83C42ACC246686FF66F0DFB9 /* Pods_FetchDataFromAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189CBA181835E36E38BF58F5 /* Pods_FetchDataFromAPI.framework */; };
+		AA777CE52A5368A90018829C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA777CE42A5368A90018829C /* NetworkManager.swift */; };
+		AA777CEA2A5369530018829C /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA777CE92A5369530018829C /* Endpoints.swift */; };
+		AA777CEC2A536AFA0018829C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA777CEB2A536AFA0018829C /* UserData.swift */; };
+		AA777CEF2A536CC70018829C /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA777CEE2A536CC70018829C /* ListCell.swift */; };
 		AAC7F0852A53675E0081EBD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7F0842A53675E0081EBD8 /* AppDelegate.swift */; };
 		AAC7F0872A53675E0081EBD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7F0862A53675E0081EBD8 /* SceneDelegate.swift */; };
 		AAC7F0892A53675E0081EBD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7F0882A53675E0081EBD8 /* ViewController.swift */; };
@@ -16,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		189CBA181835E36E38BF58F5 /* Pods_FetchDataFromAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FetchDataFromAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		500BD6DB92BE5B6B4D826E34 /* Pods-FetchDataFromAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchDataFromAPI.release.xcconfig"; path = "Target Support Files/Pods-FetchDataFromAPI/Pods-FetchDataFromAPI.release.xcconfig"; sourceTree = "<group>"; };
+		751371FAB1EF38C61CCB538F /* Pods-FetchDataFromAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchDataFromAPI.debug.xcconfig"; path = "Target Support Files/Pods-FetchDataFromAPI/Pods-FetchDataFromAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		AA777CE42A5368A90018829C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AA777CE92A5369530018829C /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		AA777CEB2A536AFA0018829C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		AA777CEE2A536CC70018829C /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		AAC7F0812A53675E0081EBD8 /* FetchDataFromAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchDataFromAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC7F0842A53675E0081EBD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAC7F0862A53675E0081EBD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +43,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C42ACC246686FF66F0DFB9 /* Pods_FetchDataFromAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46AF62AD1B82C614BE506066 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				751371FAB1EF38C61CCB538F /* Pods-FetchDataFromAPI.debug.xcconfig */,
+				500BD6DB92BE5B6B4D826E34 /* Pods-FetchDataFromAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AA777CE12A53686C0018829C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA777CEB2A536AFA0018829C /* UserData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA777CE22A5368720018829C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA777CE32A53687C0018829C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAC7F0882A53675E0081EBD8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AA777CE62A53691D0018829C /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				AA777CE92A5369530018829C /* Endpoints.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		AA777CED2A536CA30018829C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AA777CEE2A536CC70018829C /* ListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		AAC7F0782A53675E0081EBD8 = {
 			isa = PBXGroup;
 			children = (
 				AAC7F0832A53675E0081EBD8 /* FetchDataFromAPI */,
 				AAC7F0822A53675E0081EBD8 /* Products */,
+				46AF62AD1B82C614BE506066 /* Pods */,
+				BFF4019B2F3839CAE1FB5491 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +119,36 @@
 		AAC7F0832A53675E0081EBD8 /* FetchDataFromAPI */ = {
 			isa = PBXGroup;
 			children = (
+				AA777CED2A536CA30018829C /* Cell */,
+				AA777CE32A53687C0018829C /* Controllers */,
+				AA777CE22A5368720018829C /* Views */,
+				AA777CE12A53686C0018829C /* Model */,
+				AAC7F0982A53676D0081EBD8 /* Networking */,
 				AAC7F0842A53675E0081EBD8 /* AppDelegate.swift */,
 				AAC7F0862A53675E0081EBD8 /* SceneDelegate.swift */,
-				AAC7F0882A53675E0081EBD8 /* ViewController.swift */,
 				AAC7F08A2A53675E0081EBD8 /* Main.storyboard */,
 				AAC7F08D2A5367600081EBD8 /* Assets.xcassets */,
 				AAC7F08F2A5367600081EBD8 /* LaunchScreen.storyboard */,
 				AAC7F0922A5367600081EBD8 /* Info.plist */,
 			);
 			path = FetchDataFromAPI;
+			sourceTree = "<group>";
+		};
+		AAC7F0982A53676D0081EBD8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AA777CE62A53691D0018829C /* EndPoints */,
+				AA777CE42A5368A90018829C /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BFF4019B2F3839CAE1FB5491 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189CBA181835E36E38BF58F5 /* Pods_FetchDataFromAPI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAC7F0952A5367600081EBD8 /* Build configuration list for PBXNativeTarget "FetchDataFromAPI" */;
 			buildPhases = (
+				65DC2E85574F928034ED8155 /* [CP] Check Pods Manifest.lock */,
 				AAC7F07D2A53675E0081EBD8 /* Sources */,
 				AAC7F07E2A53675E0081EBD8 /* Frameworks */,
 				AAC7F07F2A53675E0081EBD8 /* Resources */,
+				6D2358BBFE605C6A30D031BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +219,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65DC2E85574F928034ED8155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FetchDataFromAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D2358BBFE605C6A30D031BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FetchDataFromAPI/Pods-FetchDataFromAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FetchDataFromAPI/Pods-FetchDataFromAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FetchDataFromAPI/Pods-FetchDataFromAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AAC7F07D2A53675E0081EBD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA777CEC2A536AFA0018829C /* UserData.swift in Sources */,
+				AA777CE52A5368A90018829C /* NetworkManager.swift in Sources */,
 				AAC7F0892A53675E0081EBD8 /* ViewController.swift in Sources */,
+				AA777CEF2A536CC70018829C /* ListCell.swift in Sources */,
 				AAC7F0852A53675E0081EBD8 /* AppDelegate.swift in Sources */,
 				AAC7F0872A53675E0081EBD8 /* SceneDelegate.swift in Sources */,
+				AA777CEA2A5369530018829C /* Endpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +414,7 @@
 		};
 		AAC7F0962A5367600081EBD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751371FAB1EF38C61CCB538F /* Pods-FetchDataFromAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +443,7 @@
 		};
 		AAC7F0972A5367600081EBD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 500BD6DB92BE5B6B4D826E34 /* Pods-FetchDataFromAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

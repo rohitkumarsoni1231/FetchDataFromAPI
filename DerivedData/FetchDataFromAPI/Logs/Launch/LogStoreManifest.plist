@@ -5,6 +5,52 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>04F7EE15-6F95-4113-9834-61B62B44EFA3</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>97184513-E381-48B4-970F-7F06C5FBE833</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-FetchDataFromAPI-2023.07.04_02-47-33-+0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FetchDataFromAPI project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FetchDataFromAPI</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run FetchDataFromAPI</string>
+			<key>timeStartedRecording</key>
+			<real>710113653.81231105</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run FetchDataFromAPI</string>
+			<key>uniqueIdentifier</key>
+			<string>04F7EE15-6F95-4113-9834-61B62B44EFA3</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
